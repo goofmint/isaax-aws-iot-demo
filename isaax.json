@@ -2,11 +2,11 @@
   "name": "node-app",
   "version": "",
   "description": "node - raspberry-pi",
-  "main": "app.js",
+  "main": "index.js",
   "author": "",
   "language":"node",
   "license": "",
   "scripts": {
-     "start": "node app.js"
+     "start": "node index.js"
     }
 }

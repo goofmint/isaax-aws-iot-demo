@@ -22,11 +22,8 @@ const minimumDelay = 250;
 device.subscribe('topic_2');
 
 timeout = setInterval(function() {
-  const temp = 50;
-  /*
   const {stdout, stderr} = await promisify(exec)('vcgencmd measure_temp');
   const temp = parseFloat(stdout.replace(/temp=([0-9\.]*)'C/, '$1'));
-  */
   device.publish('topic_2', JSON.stringify({
     temprature: temp
   }));
